@@ -1,4 +1,6 @@
 const fetch = require("node-fetch");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const myHeaders = new fetch.Headers();
 myHeaders.append("Content-Type", "application/json");
@@ -8,7 +10,7 @@ const requestOptions = {
   redirect: "follow",
 };
 
-const url = "https://v1.nocodeapi.com/craigdoescode/medium/WGNWCuqwumKAUoxO";
+const url = `https://v1.nocodeapi.com/craigdoescode/medium/${process.env.MEDIUM_KEY}`;
 async function getMediumPosts() {
   const data = await fetch(url, requestOptions);
   const posts = await data.json();

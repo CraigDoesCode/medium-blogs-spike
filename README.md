@@ -1,8 +1,10 @@
 # Medium blogs spike
 
-## Scope
+## Aim
 
 I'm building a prortfolio website and would love to have a blog sesion. I do not want to duplicate the work of writing medium articles however I would like to be able to display the blogs inlign with the design of my portfolio site.
+
+## How it works
 
 ## References
 
